@@ -27,7 +27,7 @@ This repo mirrors the central skill library (originally at the internal Forge).
 Clone or keep a local copy, then symlink:
 
 ```bash
-git clone https://github.com/cpradmin/claude-library.git ~/Projects/claude-library
+git clone https://github.com/cpradmin/Grok-Eve-Library.git ~/Projects/claude-library
 mkdir -p ~/.claude/skills ~/.grok/skills
 
 # Symlink standalone
@@ -53,13 +53,13 @@ cd ~/Projects/claude-library && git pull origin main && git push github main
 ### For web Grok (grok.com)
 Point Grok to this repo. Instruct it:
 
-"The shared skills are in https://github.com/cpradmin/claude-library
+"The shared skills are in https://github.com/cpradmin/Grok-Eve-Library
 
 Load on demand:
 - Standalone skill 'foo': https://raw.githubusercontent.com/cpradmin/claude-library/main/standalone/foo/SKILL.md
 - Skills inside bundles (e.g. nebula inside _ember-skills): https://raw.githubusercontent.com/cpradmin/claude-library/main/skills/_ember-skills/nebula/SKILL.md
 
-Browse the tree for full list: https://github.com/cpradmin/claude-library/tree/main/standalone
+Browse the tree for full list: https://github.com/cpradmin/Grok-Eve-Library/tree/main/standalone
 
 Always fetch the raw SKILL.md and follow its rules, workflows, and 'always load' notes exactly when the task matches."
 
