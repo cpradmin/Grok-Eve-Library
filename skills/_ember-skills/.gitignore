@@ -1,0 +1,7 @@
+# Symlinks from parent skills dir pointing back into this repo
+ember-covenant/
+ember-infrastructure/
+nebula/
+netbird/
+network-security-operations/
+sveltekit/

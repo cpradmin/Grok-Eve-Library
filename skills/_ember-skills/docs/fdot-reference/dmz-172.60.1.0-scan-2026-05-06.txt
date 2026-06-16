@@ -1,0 +1,1264 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-05-06 09:55 CDT
+Nmap scan report for 172.60.1.1
+Host is up (0.071s latency).
+Not shown: 65530 filtered tcp ports (no-response), 2 closed tcp ports (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       FortiSSH (protocol 2.0)
+80/tcp  open  http
+443/tcp open  ssl/https
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB56FD%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,10F,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nX-Frame-Optio
+SF:ns:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+SF:lf'\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transport-Securi
+SF:ty:\x20max-age=63072000\r\nlocation:\x20https://:443/\r\nDate:\x20Wed,\
+SF:x2006\x20May\x202026\x2014:58:06\x20GMT\r\nConnection:\x20close\r\n\r\n
+SF:")%r(HTTPOptions,10F,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nX-Fra
+SF:me-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20frame-ancestor
+SF:s\x20'self'\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transpor
+SF:t-Security:\x20max-age=63072000\r\nlocation:\x20https://:443/\r\nDate:\
+SF:x20Wed,\x2006\x20May\x202026\x2014:58:07\x20GMT\r\nConnection:\x20close
+SF:\r\n\r\n")%r(RTSPRequest,10F,"HTTP/1\.1\x20301\x20Moved\x20Permanently\
+SF:r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20frame-
+SF:ancestors\x20'self'\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-
+SF:Transport-Security:\x20max-age=63072000\r\nlocation:\x20https://:443/\r
+SF:\nDate:\x20Wed,\x2006\x20May\x202026\x2014:58:07\x20GMT\r\nConnection:\
+SF:x20close\r\n\r\n")%r(X11Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nConnection:\x20close\r\n\r\n")%r(FourOhFourRequest,132,"HTTP/1\.1\x203
+SF:01\x20Moved\x20Permanently\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent
+SF:-Security-Policy:\x20frame-ancestors\x20'self'\r\nX-XSS-Protection:\x20
+SF:1;\x20mode=block\r\nStrict-Transport-Security:\x20max-age=63072000\r\nl
+SF:ocation:\x20https://:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nDate:\
+SF:x20Wed,\x2006\x20May\x202026\x2014:58:07\x20GMT\r\nConnection:\x20close
+SF:\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,
+SF:2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5704%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,57E,"HTTP/1\.1\x20200\x20OK\r\nContent-Encoding:\x20gzi
+SF:p\r\nContent-Type:\x20text/html\r\nETag:\x20HqGG7N50n5GNs9zdQHqx4y8pqGt
+SF:qbnys\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20
+SF:frame-ancestors\x20'self'\r\nX-XSS-Protection:\x201;\x20mode=block\r\nS
+SF:trict-Transport-Security:\x20max-age=63072000\r\nDate:\x20Wed,\x2006\x2
+SF:0May\x202026\x2014:58:13\x20GMT\r\nConnection:\x20close\r\n\r\n\x1f\x8b
+SF:\x08\0\0\0\0\0\x02\x03\x8dVY\x8f\xdb6\x10~\xf7\xaf\xe0\*El\xa7\x96d\xef
+SF:f\x93@\xb6\xb6\)\xb6M\[\xa0@\x8b`\xf3\xd0\xa7\r%\x8d\xac\xe9R\xa4@R>j\x
+SF:f8\xbfwt\xd8\xd6\xfaH\xd6\x86\x0fqf>~s\x92\xb3\xab_\xfe\xba\x7f\xf8\xe7
+SF:\xef_Yfsq7\xab\xbe\x99\xe0r\x1e:\x20\x1dz\x06\x9e\xdc\xf5\x18\xbdf9X\xc
+SF:e\xe2\x8ck\x036tJ\x9b\xba\x1f\x9cVd\xd1\n\xb8\xfb\xa4\xb4\xc5\xdf\xb8\x
+SF:85\x99\xdf,4\xc2\x88\x1b`\x99\x864t\|c\xb9\xc5\xd8w\xba\x90\x92\xe7\x10
+SF::\x0b\x84eA\0\x0e\x8b\x95\xb4\x20i\x8b%&6\x0b\x13X`\x0cn\xfd0b\(\xd1\"\
+SF:x17\xae\x89\xb9\x80p\xb2\x03\x12\(\x9f\x98\x06\x11:\xbc\(\x04\xb8V\x95q
+SF:\xe6\"A9\xcc\xe0\x7f`Bg\xf2a\xbc\xa2\x8f\xd3RI\xf9\xa2\x12\xfb\xc7\xfa\
+SF:^!\xe7\xa7\xa8&#jqiY\x03i\xd7\x05Q\xc6\x9c\xcf\xc1_\xb5\xdb<\x87m\x7f=\
+SF:xfa:E;\x05\xa96\xdd\x11\xbd\xb9\^\xdd\\_\xc0sk\xe1y\x8e\xdfF\x9d\xbc\[M
+SF:\xde\]B\xad\x85\xe7Qs\.1\x05c\x8fM\rZ\xf0\x96\x10\xed\xe5g,\xcd\xd3\xd9
+SF:\xd8\x18\x9er\x8dn\x81RB\xe2Z\x1eyf1\xaf\xf2\.\x94\x0e\x9dW\xc9\xdb\x9b
+SF:\xdb\xeb\xf7\xdf\xcd\xc1w\xe3\xdd\)\xae\xdcTi\xc6\x98\x8a\x8f\xbc}@\x01
+SF:\xf7\xd5f\x9dZ;\xda\xf5\xa2-\x19\xa48\xef\x18\xee\x08DZ-\r\xe8F\xee\xad
+SF:rAP\r\x96\x895\x16\xb6\x01f,-e\\!1\xa1\xe6\(\x1f5\$\xa8!\xb6\x03\xd0Z\x
+SF:e9!\xdb\xb4j\x8c\xf5Kj\x1bc5\xc6\xb6\?\xdd\xaf\.\xb8f\xa5\x16,dK\x94\x8
+SF:9ZzB5\xcc\xbc\x82\xdb\xacb\xcc~<\x11\x19\xe0:\xce\xce\x082n\xb2\x036\xa
+SF:6\xec\x94\x06\xab\\5JP\xb2\xb9\x96\x83\xaf\x9f\[\xc2\(\xe7\xcc\xaa\xc6\
+SF:x0bVP\xb5\x05\xec\x87Mm\xbd\xfd:<`n\x19\x08\xf2\xe3\"\^\xff\"\^\xbf\x8b
+SF:\xb2\xffw\xe2\x01U\x01\x05\xa3\xef\x93\xa1\*\xedOu<\xc3>\xf9\n2V\t\|\xf
+SF:9\xfc\xc7\xbd\xca\x0b%\)Y\x03\n\xdc\x1et\xdb\xeb=C\|\|L\x95\xf9\xb3\xda
+SF:}\xc7\xe8\xf1\x91\x80\x9fgi\xba3J\xc1\xc6\xd9\xa0O\xd3\x03\xfd\xc5");
+Service Info: CPE: cpe:/o:fortinet:fortios
+
+Nmap scan report for DMZ-SW.chpfms.d3its.local (172.60.1.2)
+Host is up (0.071s latency).
+Not shown: 65530 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        AllegroSoft RomSShell sshd 5.40 (protocol 2.0)
+23/tcp   open  telnet     Pocket CMD telnetd
+80/tcp   open  tcpwrapped
+2000/tcp open  tcpwrapped
+5060/tcp open  tcpwrapped
+
+Nmap scan report for 172.60.1.3
+Host is up (0.071s latency).
+Not shown: 65526 filtered tcp ports (no-response), 4 closed tcp ports (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http
+2000/tcp open  cisco-sccp?
+5060/tcp open  sip?
+5400/tcp open  domain        Unbound
+8090/tcp open  opsmessaging?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB56FD%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,17FC,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html\r\n
+SF:Last-Modified:\x20Wed,\x2027\x20Mar\x202024\x2014:39:36\x20GMT\r\nConte
+SF:nt-Length:\x2079963\r\nCache-Control:\x20no-store,\x20no-cache,\x20must
+SF:-revalidate,\x20post-check=0,\x20pre-check=0\r\nX-Frame-Options:\x20den
+SF:y\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<!--\[if\x20lt\x20
+SF:IE\x207\]>\x20\x20\x20\x20\x20\x20<html\x20class=\"no-js\x20lt-ie9\x20l
+SF:t-ie8\x20lt-ie7\">\x20<!\[endif\]-->\n<!--\[if\x20IE\x207\]>\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<html\x20class=\"no-js\x20lt-ie9\x20lt-ie8\">\
+SF:x20<!\[endif\]-->\n<!--\[if\x20IE\x208\]>\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20<html\x20class=\"no-js\x20lt-ie9\">\x20<!\[endif\]-->\n<!--\[if\x
+SF:20gt\x20IE\x208\]><!-->\n<html\x20class=\"no-js\">\x20<!--<!\[endif\]--
+SF:>\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20cha
+SF:rset=\"utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"
+SF:X-UA-Compatible\"\x20content=\"IE=edge,chrome=1\">\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20<title></title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20
+SF:name=\"description\"\x20content=\"\">\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:<meta\x20name=\"viewport\"\x20content=\"width=device-width\">\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20href=\"css/norma
+SF:lize\.css\">\n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20rel=\"stylesheet
+SF:\"\x20href=\"css/main\.css\">\n\x20\x20\x20\x20\x20\x20\x20\x20<script\
+SF:x20src=\"thir")%r(HTTPOptions,C0,"HTTP/1\.0\x20200\x20OK\r\nAllow:\x20O
+SF:PTIONS,\x20GET,\x20HEAD,\x20POST\r\nCache-Control:\x20no-store,\x20no-c
+SF:ache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\nX-Frame-Op
+SF:tions:\x20deny\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(RTSPRequest,1B6,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/html\r\nContent-Length:\x20345\r\nConnection:\x20close\r\n\r\
+SF:n<\?xml\x20version=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x2
+SF:0html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"
+SF:\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/D
+SF:TD/xhtml1-transitional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/19
+SF:99/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<tit
+SF:le>400\x20Bad\x20Request</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>
+SF:400\x20Bad\x20Request</h1>\n\x20</body>\n</html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8090-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB56FD%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,1B6,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/html\r\nContent-Length:\x20345\r\nConnection:\x20close\r\n\r\n<\
+SF:?xml\x20version=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20ht
+SF:ml\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/
+SF:xhtml1-transitional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/
+SF:xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>
+SF:400\x20Bad\x20Request</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>400
+SF:\x20Bad\x20Request</h1>\n\x20</body>\n</html>\n")%r(GetRequest,448,"HTT
+SF:P/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html\r\nLast-Modified:\x20
+SF:Wed,\x2027\x20Mar\x202024\x2014:39:36\x20GMT\r\nContent-Length:\x20864\
+SF:r\nCache-Control:\x20no-store,\x20no-cache,\x20must-revalidate,\x20post
+SF:-check=0,\x20pre-check=0\r\nX-Frame-Options:\x20deny\r\nConnection:\x20
+SF:close\r\n\r\n<html>\n<head>\n<title>Error</title>\n</head>\n\n<style\x2
+SF:0type=\"text/css\">\n<!--\ndiv\x20{\n\tpadding-top:\x208px;\n\tpadding-
+SF:bottom:\x208px;\n}\na\x20{\n\tcolor:\x20#28A30F;\n}\n\.type_style1\x20{
+SF:\n\tfont-size:\x2030px;\n\tcolor:\x20#333333;\n\tfont-family:\x20Arial,
+SF:\x20Helvetica,\x20sans-serif;\n}\n\.type_style2\x20{\n\tfont-size:\x201
+SF:2px;\n\tcolor:\x20333333;\n\tfont-family:\x20Arial,\x20Helvetica,\x20sa
+SF:ns-serif;\n}\n\.type_style3\x20{\n\tfont-size:\x2012px;\n\tcolor:\x2099
+SF:9999;\n\tfont-family:\x20Arial,\x20Helvetica,\x20sans-serif;\n}\n-->\n<
+SF:/style>\n\n<body\x20topmargin=\"0\"\x20bottommargin=\"0\"\x20marginheig
+SF:ht=\"0\">\n<table\x20width=\"760\"\x20border=\"0\"\x20align=\"center\"\
+SF:x20cellpadding=\"0\"\x20cellspacing=\"0\">\n\x20\x20<tr>\n\x20\x20\x20\
+SF:x20<td\x20height=\"84\"\x20valign=\"middle\"><img\x20src=\"images/logo\
+SF:.png\"\x20alt=\"Cisco\x20Systems,\x20")%r(HTTPOptions,C0,"HTTP/1\.0\x20
+SF:200\x20OK\r\nAllow:\x20OPTIONS,\x20GET,\x20HEAD,\x20POST\r\nCache-Contr
+SF:ol:\x20no-store,\x20no-cache,\x20must-revalidate,\x20post-check=0,\x20p
+SF:re-check=0\r\nX-Frame-Options:\x20deny\r\nContent-Length:\x200\r\nConne
+SF:ction:\x20close\r\n\r\n");
+
+Nmap scan report for 172.60.1.16
+Host is up (0.071s latency).
+Not shown: 65513 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+80/tcp    open  http               Microsoft IIS httpd 8.5
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http           Microsoft IIS httpd 8.5
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1801/tcp  open  msmq?
+2000/tcp  open  tcpwrapped
+2103/tcp  open  msrpc              Microsoft Windows RPC
+2105/tcp  open  msrpc              Microsoft Windows RPC
+2107/tcp  open  msrpc              Microsoft Windows RPC
+3389/tcp  open  ssl/ms-wbt-server?
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+49159/tcp open  msrpc              Microsoft Windows RPC
+49160/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.20
+Host is up (0.071s latency).
+Not shown: 65526 filtered tcp ports (no-response), 1 closed tcp port (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+443/tcp   open  https?
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  cisco-sccp?
+2179/tcp  open  vmrdp?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5060/tcp  open  sip?
+49666/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.21
+Host is up (0.072s latency).
+Not shown: 65520 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49671/tcp open  msrpc         Microsoft Windows RPC
+49677/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.24
+Host is up (0.071s latency).
+Not shown: 65520 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+49159/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for DOTSD3CPITSOTM.CHPFMS.D3ITS.local (172.60.1.30)
+Host is up (0.071s latency).
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE SERVICE         VERSION
+22/tcp    open  ssh             OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp    open  http            Apache Tomcat 9.0.54
+135/tcp   open  msrpc           Microsoft Windows RPC
+139/tcp   open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+1935/tcp  open  rtmp?
+2000/tcp  open  tcpwrapped
+3306/tcp  open  mysql           MySQL 5.7.40-log
+3389/tcp  open  ms-wbt-server   Microsoft Terminal Services
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8554/tcp  open  rtsp-alt?
+8888/tcp  open  sun-answerbook?
+47001/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc           Microsoft Windows RPC
+49665/tcp open  msrpc           Microsoft Windows RPC
+49667/tcp open  msrpc           Microsoft Windows RPC
+49668/tcp open  msrpc           Microsoft Windows RPC
+49670/tcp open  msrpc           Microsoft Windows RPC
+49671/tcp open  msrpc           Microsoft Windows RPC
+49701/tcp open  msrpc           Microsoft Windows RPC
+49722/tcp open  msrpc           Microsoft Windows RPC
+49732/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8888-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB573B%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,E3,"HTTP/1\.0\x20404\x20Not\x20Found\r\nAccess-Control-Allow
+SF:-Credentials:\x20true\r\nAccess-Control-Allow-Origin:\x20\*\r\nContent-
+SF:Type:\x20text/plain\r\nServer:\x20rtsp-simple-server\r\nDate:\x20Wed,\x
+SF:2006\x20May\x202026\x2014:59:07\x20GMT\r\nContent-Length:\x2018\r\n\r\n
+SF:404\x20page\x20not\x20found")%r(HTTPOptions,FB,"HTTP/1\.0\x20200\x20OK\
+SF:r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-He
+SF:aders:\x20\r\nAccess-Control-Allow-Methods:\x20GET,\x20OPTIONS\r\nAcces
+SF:s-Control-Allow-Origin:\x20\*\r\nServer:\x20rtsp-simple-server\r\nDate:
+SF:\x20Wed,\x2006\x20May\x202026\x2014:59:07\x20GMT\r\nContent-Length:\x20
+SF:0\r\n\r\n")%r(FourOhFourRequest,E7,"HTTP/1\.0\x20301\x20Moved\x20Perman
+SF:ently\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Al
+SF:low-Origin:\x20\*\r\nLocation:\x20/nice\x20ports,/Trinity\.txt\.bak/\r\
+SF:nServer:\x20rtsp-simple-server\r\nDate:\x20Wed,\x2006\x20May\x202026\x2
+SF:014:59:07\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(LSCP,67,"HTTP/1\.1
+SF:\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=ut
+SF:f-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(GenericLin
+SF:es,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
+SF:e:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x
+SF:20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCon
+SF:tent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\
+SF:r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\
+SF:x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnecti
+SF:on:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20c
+SF:harset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(T
+SF:LSSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.40
+Host is up (0.071s latency).
+Not shown: 65495 closed tcp ports (conn-refused), 24 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4259
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49695/tcp open  msrpc         Microsoft Windows RPC
+49696/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.42
+Host is up (0.071s latency).
+Not shown: 65495 closed tcp ports (conn-refused), 14 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 10.0
+89/tcp    open  http          Microsoft IIS httpd 10.0
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5000/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8080/tcp  open  http          Microsoft IIS httpd 10.0
+9999/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+16780/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+16781/tcp open  mc-nmf        .NET Message Framing
+16782/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+16784/tcp open  mc-nmf        .NET Message Framing
+16785/tcp open  mc-nmf        .NET Message Framing
+18670/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+49687/tcp open  msrpc         Microsoft Windows RPC
+49690/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.44
+Host is up (0.071s latency).
+Not shown: 65519 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 10.0
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49676/tcp open  msrpc         Microsoft Windows RPC
+49680/tcp open  msrpc         Microsoft Windows RPC
+49685/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.52
+Host is up (0.071s latency).
+Not shown: 65497 closed tcp ports (conn-refused), 29 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 7.6p1 Ubuntu 4ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http          DVEO 22.02.1
+554/tcp   open  rtsp
+1935/tcp  open  tcpwrapped
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server xrdp
+5060/tcp  open  tcpwrapped
+39103/tcp open  unknown
+44797/tcp open  tcpwrapped
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB58D1%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,89,"HTTP/1\.0\x20302\x20Found\r\nDate:\x20Wed,\x2006\x20May\x2
+SF:02026\x2015:05:52\x20GMT\r\nContent-Length:\x2017\r\nServer:\x20DVEO\x2
+SF:022\.02\.1\r\nLocation:\x20/admin/\r\n\r\nLocation\x20/admin/\n")%r(HTT
+SF:POptions,89,"HTTP/1\.0\x20302\x20Found\r\nDate:\x20Wed,\x2006\x20May\x2
+SF:02026\x2015:05:53\x20GMT\r\nContent-Length:\x2017\r\nServer:\x20DVEO\x2
+SF:022\.02\.1\r\nLocation:\x20/admin/\r\n\r\nLocation\x20/admin/\n")%r(RTS
+SF:PRequest,9C,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20Not\x20Supported\r\
+SF:nConnection:\x20close\r\nServer:\x20Cowboy\r\nDate:\x20Wed,\x2006\x20Ma
+SF:y\x202026\x2015:05:53\x20GMT\r\nContent-Length:\x2021\r\n\r\nunknown\x2
+SF:0HTTP\x20version\n")%r(FourOhFourRequest,1C1,"HTTP/1\.0\x20404\x20Not\x
+SF:20Found\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:05:58\x20GMT\r\nCon
+SF:tent-Length:\x2010\r\nServer:\x20DVEO\x2022\.02\.1\r\nAccess-Control-Al
+SF:low-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,\x20PUT,\x20D
+SF:ELETE,\x20OPTIONS\r\nAccess-Control-Expose-Headers:\x20Server,\x20range
+SF:,\x20X-Run-Time,\x20X-Sid,\x20Content-Length,\x20Location\r\nAccess-Con
+SF:trol-Allow-Headers:\x20x-vsaas-session,\x20x-no-redirect,\x20origin,\x2
+SF:0authorization,\x20accept,\x20range,\x20content-type,\x20x-add-effectiv
+SF:e,\x20session,\x20x-originator\r\n\r\nNot\x20found\n")%r(Help,96,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nServer:\x20Cow
+SF:boy\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:06:18\x20GMT\r\nContent
+SF:-Length:\x2030\r\n\r\naccidential\x20CR\x20in\x20http\x20method\n")%r(S
+SF:SLSessionReq,97,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20c
+SF:lose\r\nServer:\x20Cowboy\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:0
+SF:6:18\x20GMT\r\nContent-Length:\x2031\r\n\r\naccidential\x20EOL\x20in\x2
+SF:0http\x20method\n")%r(TerminalServerCookie,9B,"HTTP/1\.1\x20400\x20Bad\
+SF:x20Request\r\nConnection:\x20close\r\nServer:\x20Cowboy\r\nDate:\x20Wed
+SF:,\x2006\x20May\x202026\x2015:06:19\x20GMT\r\nContent-Length:\x2035\r\n\
+SF:r\naccidential\x20CR\x20in\x20reading\x20URI\x20path\n")%r(TLSSessionRe
+SF:q,96,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nSer
+SF:ver:\x20Cowboy\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:06:19\x20GMT
+SF:\r\nContent-Length:\x2030\r\n\r\naccidential\x20CR\x20in\x20http\x20met
+SF:hod\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port554-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB58DB%P=x86_64-pc-linux-gnu%r(R
+SF:TSPRequest,E8,"RTSP/1\.0\x20200\x20OK\r\nServer:\x20DVEO\x2022\.02\.1\r
+SF:\nCache-Control:\x20no-cache\r\nSupported:\x20play\.basic,\x20con\.pers
+SF:istent\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:05:58\x20GMT\r\nPubl
+SF:ic:\x20SETUP,\x20TEARDOWN,\x20ANNOUNCE,\x20RECORD,\x20PLAY,\x20PAUSE,\x
+SF:20OPTIONS,\x20DESCRIBE,\x20GET_PARAMETER\r\n\r\n")%r(HTTPOptions,E8,"RT
+SF:SP/1\.0\x20200\x20OK\r\nServer:\x20DVEO\x2022\.02\.1\r\nCache-Control:\
+SF:x20no-cache\r\nSupported:\x20play\.basic,\x20con\.persistent\r\nDate:\x
+SF:20Wed,\x2006\x20May\x202026\x2015:06:08\x20GMT\r\nPublic:\x20SETUP,\x20
+SF:TEARDOWN,\x20ANNOUNCE,\x20RECORD,\x20PLAY,\x20PAUSE,\x20OPTIONS,\x20DES
+SF:CRIBE,\x20GET_PARAMETER\r\n\r\n")%r(FourOhFourRequest,52,"RTSP/1\.0\x20
+SF:405\x20Method\x20not\x20allowed\r\nServer:\x20DVEO\x2022\.02\.1\r\nCach
+SF:e-Control:\x20no-cache\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.60.1.53
+Host is up (0.071s latency).
+Not shown: 65515 closed tcp ports (conn-refused), 12 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE          VERSION
+22/tcp    open  ssh              Dropbear sshd 2019.78 (protocol 2.0)
+80/tcp    open  http
+443/tcp   open  ssl/https
+623/tcp   open  ssl/oob-ws-http?
+2000/tcp  open  tcpwrapped
+5060/tcp  open  tcpwrapped
+5900/tcp  open  ssl/vnc?
+49152/tcp open  upnp             Portable SDK for UPnP devices 1.8.4 (Linux 3.18.0; UPnP 1.0)
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB58D2%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,82,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nLocation:\x20h
+SF:ttps:///\r\nContent-Length:\x200\r\nConnection:\x20close\r\nDate:\x20We
+SF:d,\x2006\x20May\x202026\x2014:41:34\x20GMT\r\n\r\n")%r(HTTPOptions,82,"
+SF:HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nLocation:\x20https:///\r\nC
+SF:ontent-Length:\x200\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20M
+SF:ay\x202026\x2014:41:35\x20GMT\r\n\r\n")%r(RTSPRequest,1DB,"HTTP/1\.0\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:
+SF:\x20345\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20May\x202026\x
+SF:2014:41:35\x20GMT\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"iso-8
+SF:859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\
+SF:.0\x20Transitional//EN\"\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\"http://
+SF:www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n<html\x20xmlns=
+SF:\"http://www\.w3\.org/1999/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n
+SF:\x20<head>\n\x20\x20<title>400\x20Bad\x20Request</title>\n\x20</head>\n
+SF:\x20<body>\n\x20\x20<h1>400\x20Bad\x20Request</h1>\n\x20</body>\n</html
+SF:>\n")%r(FourOhFourRequest,334,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCont
+SF:ent-Type:\x20text/html\r\nStrict-Transport-Security:\x20max-age=3153600
+SF:0;\x20includeSubdomains\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCon
+SF:tent-Security-Policy:\x20default-src\x20'self';connect-src\x20'self';fr
+SF:ame-src\x20'self'\x20data:;img-src\x20'self'\x20data:;object-src\x20'se
+SF:lf';font-src\x20'self'\x20data:;script-src\x20'self'\x20'unsafe-inline'
+SF:\x20'unsafe-eval';style-src\x20'self'\x20'unsafe-inline';worker-src\x20
+SF:'self'\x20blob:;\r\nContent-Length:\x20341\r\nConnection:\x20close\r\nD
+SF:ate:\x20Wed,\x2006\x20May\x202026\x2014:41:40\x20GMT\r\n\r\n<\?xml\x20v
+SF:ersion=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUB
+SF:LIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-tr
+SF:ansitional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x
+SF:20xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>404\x20No
+SF:t\x20Found</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>404\x20Not\x20
+SF:Found</h1>\n\x20</body>\n</html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB58DD%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,11E6,"HTTP/1\.0\x20200\x20OK\r\nContent-Length:\x204413
+SF:\r\nContent-Type:\x20text/html\r\nStrict-Transport-Security:\x20max-age
+SF:=31536000;\x20includeSubdomains\r\nX-XSS-Protection:\x201;\x20mode=bloc
+SF:k\r\nContent-Security-Policy:\x20default-src\x20'self';connect-src\x20'
+SF:self';frame-src\x20'self'\x20data:;img-src\x20'self'\x20data:;object-sr
+SF:c\x20'self';font-src\x20'self'\x20data:;script-src\x20'self'\x20'unsafe
+SF:-inline'\x20'unsafe-eval';style-src\x20'self'\x20'unsafe-inline';worker
+SF:-src\x20'self'\x20blob:;\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Content
+SF:-Type-Options:\x20nosniff\r\nConnection:\x20close\r\nDate:\x20Wed,\x200
+SF:6\x20May\x202026\x2014:41:45\x20GMT\r\n\r\n<!--\n<!DOCTYPE\x20html\x20P
+SF:UBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\"http
+SF:://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n-->\n<html\x
+SF:20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n<head>\n\x20\x20\x20\x20<M
+SF:ETA\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=u
+SF:tf-8\">\n\x20\x20\x20\x20<META\x20HTTP-EQUIV=\"Pragma\"\x20CONTENT=\"no
+SF:_cache\">\n\x20\x20\x20\x20<META\x20NAME=\"ATEN\x20International\x20Co\
+SF:x20Ltd\.\"\x20CONTENT=\"\(c\)\x20ATEN")%r(HTTPOptions,1D5,"HTTP/1\.0\x2
+SF:0403\x20Forbidden\r\nContent-Type:\x20text/html\r\nContent-Length:\x203
+SF:41\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20May\x202026\x2014:
+SF:41:46\x20GMT\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"iso-8859-1
+SF:\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x2
+SF:0Transitional//EN\"\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\"http://www\.
+SF:w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n<html\x20xmlns=\"htt
+SF:p://www\.w3\.org/1999/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\x20<
+SF:head>\n\x20\x20<title>403\x20Forbidden</title>\n\x20</head>\n\x20<body>
+SF:\n\x20\x20<h1>403\x20Forbidden</h1>\n\x20</body>\n</html>\n")%r(FourOhF
+SF:ourRequest,372,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20te
+SF:xt/html\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSu
+SF:bdomains\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-P
+SF:olicy:\x20default-src\x20'self';connect-src\x20'self';frame-src\x20'sel
+SF:f'\x20data:;img-src\x20'self'\x20data:;object-src\x20'self';font-src\x2
+SF:0'self'\x20data:;script-src\x20'self'\x20'unsafe-inline'\x20'unsafe-eva
+SF:l';style-src\x20'self'\x20'unsafe-inline';worker-src\x20'self'\x20blob:
+SF:;\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Content-Type-Options:\x20nosni
+SF:ff\r\nContent-Length:\x20341\r\nConnection:\x20close\r\nDate:\x20Wed,\x
+SF:2006\x20May\x202026\x2014:41:51\x20GMT\r\n\r\n<\?xml\x20version=\"1\.0\
+SF:"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3
+SF:C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dt
+SF:d\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20xml:lang=\"e
+SF:n\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>404\x20Not\x20Found</ti
+SF:tle>\n\x20</head>\n\x20<body>\n\x20\x20<h1>404\x20Not\x20Found</h1>\n\x
+SF:20</body>\n</html>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel, cpe:/o:linux:linux_kernel:3.18.0
+
+Nmap scan report for DOTSD3CPSPARR.CHPFMS.D3ITS.local (172.60.1.54)
+Host is up (0.071s latency).
+Not shown: 65500 closed tcp ports (conn-refused), 9 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE         VERSION
+22/tcp    open  ssh             OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp    open  http            Microsoft IIS httpd 10.0
+135/tcp   open  msrpc           Microsoft Windows RPC
+139/tcp   open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server   Microsoft Terminal Services
+5060/tcp  open  tcpwrapped
+5357/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp  open  vnc-http        TightVNC (user: dotsd3cpsparr; VNC TCP port: 5901)
+5900/tcp  open  vnc             VNC (protocol 3.8)
+5901/tcp  open  vnc             VNC (protocol 3.8)
+5985/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8001/tcp  open  vcom-tunnel?
+8002/tcp  open  teradataordbms?
+41302/tcp open  unknown
+47001/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc           Microsoft Windows RPC
+49665/tcp open  msrpc           Microsoft Windows RPC
+49666/tcp open  msrpc           Microsoft Windows RPC
+49669/tcp open  msrpc           Microsoft Windows RPC
+49671/tcp open  msrpc           Microsoft Windows RPC
+49674/tcp open  msrpc           Microsoft Windows RPC
+50096/tcp open  msrpc           Microsoft Windows RPC
+50106/tcp open  msrpc           Microsoft Windows RPC
+50244/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8002-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB58F7%P=x86_64-pc-linux-gnu%r(
+SF:NULL,355,"\0\0\x03M\0\0\0\0<\?xml\x20version=\"1\.0\"\x20encoding=\"utf
+SF:-8\"\?><processView\x20xmlns:xsd=\"http://www\.w3\.org/2001/XMLSchema\"
+SF:\x20xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\"><processI
+SF:tem><processName>SPARRDriverService</processName><processType>Windows\x
+SF:20Service</processType><displayName>SG\x20AVL\x20SPARR\x20Driver</displ
+SF:ayName><subsystem>AVL/RR</subsystem><autoStartup>False</autoStartup><au
+SF:toRestart>False</autoRestart><connectStatus>Running</connectStatus><pro
+SF:cStatus>Normal</procStatus><startTime>2026-05-02\x2002:06:45</startTime
+SF:><updateTime>2026-05-06\x2010:06:23</updateTime><logLevel>slInfo</logLe
+SF:vel><cpuUsage>0</cpuUsage><cpuThresholdExceeded>false</cpuThresholdExce
+SF:eded><workingSet>80\.76171875</workingSet><privateMemory>46\.73046875</
+SF:privateMemory><memoryThresholdExceeded>false</memoryThresholdExceeded><
+SF:/processItem><processHost>DOTSD3CPSPARR</processHost></processView>")%r
+SF:(GenericLines,355,"\0\0\x03M\0\0\0\0<\?xml\x20version=\"1\.0\"\x20encod
+SF:ing=\"utf-8\"\?><processView\x20xmlns:xsd=\"http://www\.w3\.org/2001/XM
+SF:LSchema\"\x20xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\">
+SF:<processItem><processName>SPARRDriverService</processName><processType>
+SF:Windows\x20Service</processType><displayName>SG\x20AVL\x20SPARR\x20Driv
+SF:er</displayName><subsystem>AVL/RR</subsystem><autoStartup>False</autoSt
+SF:artup><autoRestart>False</autoRestart><connectStatus>Running</connectSt
+SF:atus><procStatus>Normal</procStatus><startTime>2026-05-02\x2002:06:45</
+SF:startTime><updateTime>2026-05-06\x2010:06:23</updateTime><logLevel>slIn
+SF:fo</logLevel><cpuUsage>0</cpuUsage><cpuThresholdExceeded>false</cpuThre
+SF:sholdExceeded><workingSet>80\.76171875</workingSet><privateMemory>46\.7
+SF:3046875</privateMemory><memoryThresholdExceeded>false</memoryThresholdE
+SF:xceeded></processItem><processHost>DOTSD3CPSPARR</processHost></process
+SF:View>")%r(Help,5C8,"\0\0\x03M\0\0\0\0<\?xml\x20version=\"1\.0\"\x20enco
+SF:ding=\"utf-8\"\?><processView\x20xmlns:xsd=\"http://www\.w3\.org/2001/X
+SF:MLSchema\"\x20xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\"
+SF:><processItem><processName>SPARRDriverService</processName><processType
+SF:>Windows\x20Service</processType><displayName>SG\x20AVL\x20SPARR\x20Dri
+SF:ver</displayName><subsystem>AVL/RR</subsystem><autoStartup>False</autoS
+SF:tartup><autoRestart>False</autoRestart><connectStatus>Running</connectS
+SF:tatus><procStatus>Normal</procStatus><startTime>2026-05-02\x2002:06:45<
+SF:/startTime><updateTime>2026-05-06\x2010:06:23</updateTime><logLevel>slI
+SF:nfo</logLevel><cpuUsage>0</cpuUsage><cpuThresholdExceeded>false</cpuThr
+SF:esholdExceeded><workingSet>80\.76171875</workingSet><privateMemory>46\.
+SF:73046875</privateMemory><memoryThresholdExceeded>false</memoryThreshold
+SF:Exceeded></processItem><processHost>DOTSD3CPSPARR</processHost></proces
+SF:sView>\0\0\x02k\0\0\0\0<\?xml\x20version=\"1\.0\"\x20encoding=\"utf-8\"
+SF:\?><");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.60
+Host is up (0.071s latency).
+Not shown: 65511 closed tcp ports (conn-refused), 16 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+2000/tcp  open  tcpwrapped
+5060/tcp  open  tcpwrapped
+8000/tcp  open  nagios-nsca Nagios NSCA
+9000/tcp  open  cslistener?
+9993/tcp  open  palace-2?
+40942/tcp open  unknown
+65466/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9000-TCP:V=7.94SVN%I=7%D=5/6%Time=69FB5902%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(GetRequest,2E4A,"HTTP/1\.0\x20200\x20OK\r\nAccept-Range
+SF:s:\x20bytes\r\nCache-Control:\x20max-age=31536000\r\nContent-Length:\x2
+SF:023180\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nLast-Modified
+SF::\x20Thu,\x2026\x20Aug\x202021\x2022:17:01\x20GMT\r\nX-Content-Type-Opt
+SF:ions:\x20nosniff\r\nX-Xss-Protection:\x201;\x20mode=block\r\nDate:\x20W
+SF:ed,\x2006\x20May\x202026\x2015:06:42\x20GMT\r\n\r\n<!DOCTYPE\x20html\n>
+SF:<html\x20lang=\"en\"\x20ng-app=\"portainer\"\x20ng-strict-di>\n\x20\x20
+SF:<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\"\x20/>\n\x20\x20\x20\
+SF:x20<title>Portainer</title>\n\x20\x20\x20\x20<meta\x20name=\"descriptio
+SF:n\"\x20content=\"\"\x20/>\n\x20\x20\x20\x20<meta\x20name=\"author\"\x20
+SF:content=\"Portainer\.io\"\x20/>\n\n\x20\x20\x20\x20<!--\x20HTML5\x20shi
+SF:m,\x20for\x20IE6-8\x20support\x20of\x20HTML5\x20elements\x20-->\n\x20\x
+SF:20\x20\x20<!--\[if\x20lt\x20IE\x209\]>\n\x20\x20\x20\x20\x20\x20<script
+SF:\x20src=\"//html5shim\.googlecode\.com/svn/trunk/html5\.js\"></script>\
+SF:n\x20\x20\x20\x20<!\[endif\]-->\n\n\x20\x20\x20\x20<!--\x20Fav\x20and\x
+SF:20touch\x20icons\x20-->\n\x20\x20\x20\x20<link\x20rel=\"apple-touch-ico
+SF:n\"\x20sizes=\"180x180\"\x20href=\"dc4d092847be46242d8c013d1bc7c494\.pn
+SF:g\"\x20/>\n\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image/png\"\
+SF:x20sizes=\"32x32\"\x20href=\"5ba13dcb526292ae707310a5")%r(HTTPOptions,2
+SF:E4A,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCache-Control
+SF::\x20max-age=31536000\r\nContent-Length:\x2023180\r\nContent-Type:\x20t
+SF:ext/html;\x20charset=utf-8\r\nLast-Modified:\x20Thu,\x2026\x20Aug\x2020
+SF:21\x2022:17:01\x20GMT\r\nX-Content-Type-Options:\x20nosniff\r\nX-Xss-Pr
+SF:otection:\x201;\x20mode=block\r\nDate:\x20Wed,\x2006\x20May\x202026\x20
+SF:15:06:42\x20GMT\r\n\r\n<!DOCTYPE\x20html\n><html\x20lang=\"en\"\x20ng-a
+SF:pp=\"portainer\"\x20ng-strict-di>\n\x20\x20<head>\n\x20\x20\x20\x20<met
+SF:a\x20charset=\"utf-8\"\x20/>\n\x20\x20\x20\x20<title>Portainer</title>\
+SF:n\x20\x20\x20\x20<meta\x20name=\"description\"\x20content=\"\"\x20/>\n\
+SF:x20\x20\x20\x20<meta\x20name=\"author\"\x20content=\"Portainer\.io\"\x2
+SF:0/>\n\n\x20\x20\x20\x20<!--\x20HTML5\x20shim,\x20for\x20IE6-8\x20suppor
+SF:t\x20of\x20HTML5\x20elements\x20-->\n\x20\x20\x20\x20<!--\[if\x20lt\x20
+SF:IE\x209\]>\n\x20\x20\x20\x20\x20\x20<script\x20src=\"//html5shim\.googl
+SF:ecode\.com/svn/trunk/html5\.js\"></script>\n\x20\x20\x20\x20<!\[endif\]
+SF:-->\n\n\x20\x20\x20\x20<!--\x20Fav\x20and\x20touch\x20icons\x20-->\n\x2
+SF:0\x20\x20\x20<link\x20rel=\"apple-touch-icon\"\x20sizes=\"180x180\"\x20
+SF:href=\"dc4d092847be46242d8c013d1bc7c494\.png\"\x20/>\n\x20\x20\x20\x20<
+SF:link\x20rel=\"icon\"\x20type=\"image/png\"\x20sizes=\"32x32\"\x20href=\
+SF:"5ba13dcb526292ae707310a5");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.60.1.111
+Host is up (0.071s latency).
+Not shown: 65516 closed tcp ports (conn-refused), 2 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+5060/tcp  open  tcpwrapped
+5070/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5071/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.114
+Host is up (0.071s latency).
+Not shown: 65512 closed tcp ports (conn-refused), 6 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http           Microsoft IIS httpd 8.5
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp  open  ssl/http           Microsoft IIS httpd 8.5
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.115
+Host is up (0.071s latency).
+Not shown: 65506 closed tcp ports (conn-refused), 13 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2000/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+5060/tcp  open  tcpwrapped
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+49355/tcp open  ms-sql-s           Microsoft SQL Server 2017 14.00.2085
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.121
+Host is up (0.071s latency).
+Not shown: 65530 filtered tcp ports (no-response), 1 closed tcp port (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE       VERSION
+443/tcp  open  ssl/https
+2000/tcp open  cisco-sccp?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5060/tcp open  sip?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5947%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,2288,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes
+SF:\r\nCache-Control:\x20no-cache\r\nContent-Length:\x2044102\r\nContent-T
+SF:ype:\x20text/html;\x20charset=utf-8\r\nEtag:\x20\"eefa9b425fdc9338\"\r\
+SF:nLast-Modified:\x20Tue,\x2005\x20May\x202026\x2021:41:42\x20GMT\r\nVary
+SF::\x20Origin\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:07:51\x20GMT\r\
+SF:n\r\n<!doctype\x20html>\n<html\x20lang=\"en\"\x20data-beasties-containe
+SF:r>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x
+SF:20\x20\x20<title>XFlow\x20Platform</title>\n\x20\x20\x20\x20<base\x20hr
+SF:ef=\"/\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"widt
+SF:h=device-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<link\x20rel=
+SF:\"icon\"\x20type=\"image/x-icon\"\x20href=\"favicon\.ico\">\n\x20\x20<s
+SF:tyle>html{--mat-sys-on-surface:initial}html{--mat-app-background-color:
+SF:#303030;--mat-app-text-color:white;--mat-app-elevation-shadow-level-0:0
+SF:px\x200px\x200px\x200px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x200px
+SF:\x200px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x200px\x200px\
+SF:x200px\x20rgba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-lev
+SF:el-1:0px\x202px\x201px\x20-1px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px
+SF:\x201px\x201px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x201px"
+SF:)%r(HTTPOptions,2288,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes
+SF:\r\nContent-Length:\x2044102\r\nContent-Type:\x20text/html;\x20charset=
+SF:utf-8\r\nLast-Modified:\x20Tue,\x2005\x20May\x202026\x2021:41:42\x20GMT
+SF:\r\nVary:\x20Accept-Encoding\r\nVary:\x20Origin\r\nDate:\x20Wed,\x2006\
+SF:x20May\x202026\x2015:07:51\x20GMT\r\n\r\n<!doctype\x20html>\n<html\x20l
+SF:ang=\"en\"\x20data-beasties-container>\n\x20\x20<head>\n\x20\x20\x20\x2
+SF:0<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<title>XFlow\x20Platform<
+SF:/title>\n\x20\x20\x20\x20<base\x20href=\"/\">\n\x20\x20\x20\x20<meta\x2
+SF:0name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\
+SF:.0\">\n\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image/x-icon\"\x
+SF:20href=\"favicon\.ico\">\n\x20\x20<style>html{--mat-sys-on-surface:init
+SF:ial}html{--mat-app-background-color:#303030;--mat-app-text-color:white;
+SF:--mat-app-elevation-shadow-level-0:0px\x200px\x200px\x200px\x20rgba\(0,
+SF:\x200,\x200,\x20\.2\),\x200px\x200px\x200px\x200px\x20rgba\(0,\x200,\x2
+SF:00,\x20\.14\),\x200px\x200px\x200px\x200px\x20rgba\(0,\x200,\x200,\x20\
+SF:.12\);--mat-app-elevation-shadow-level-1:0px\x202px\x201px\x20-1px\x20r
+SF:gba\(0,\x200,\x200,\x20\.2\),\x200px\x201px\x201px\x200px\x20rgba\(0,\x
+SF:200,\x200,\x20\.14\),\x200px\x201px\x203px\x200px\x20rgba\(0,\x200,\x20
+SF:0,\x20\.12\);");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.122
+Host is up (0.071s latency).
+Not shown: 65527 filtered tcp ports (no-response), 1 closed tcp port (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+443/tcp  open  ssl/http           Microsoft IIS httpd 10.0
+2000/tcp open  cisco-sccp?
+3389/tcp open  ms-wbt-server      Microsoft Terminal Services
+3443/tcp open  ssl/ov-nnm-websrv?
+5060/tcp open  sip?
+5357/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5985/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5954%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,1000,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20byte
+SF:s\r\nCache-Control:\x20no-cache\r\nContent-Length:\x2043901\r\nContent-
+SF:Type:\x20text/html;\x20charset=utf-8\r\nEtag:\x20\"2ce4d74f94d1239d\"\r
+SF:\nLast-Modified:\x20Sun,\x2003\x20May\x202026\x2015:45:26\x20GMT\r\nVar
+SF:y:\x20Origin\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:04\x20GMT\r
+SF:\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\"\x20data-beasties-contain
+SF:er>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\
+SF:x20\x20\x20<title>Snaps</title>\n\x20\x20\x20\x20<base\x20href=\"/\">\n
+SF:\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=device-wi
+SF:dth,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<link\x20rel=\"icon\"\x2
+SF:0type=\"image/x-icon\"\x20href=\"favicon\.ico\">\n\x20\x20<style>html{-
+SF:-mat-sys-on-surface:initial}html{--mat-app-background-color:#303030;--m
+SF:at-app-text-color:white;--mat-app-elevation-shadow-level-0:0px\x200px\x
+SF:200px\x200px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x200px\x200px\x20
+SF:0px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x200px\x200px\x200px\x20r
+SF:gba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-level-1:0px\x2
+SF:02px\x201px\x20-1px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x201px\x20
+SF:1px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x201px\x203px\x200
+SF:px\x20")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConte
+SF:nt-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\
+SF:n400\x20Bad\x20Request")%r(HTTPOptions,1000,"HTTP/1\.0\x20200\x20OK\r\n
+SF:Accept-Ranges:\x20bytes\r\nContent-Length:\x2043901\r\nContent-Type:\x2
+SF:0text/html;\x20charset=utf-8\r\nLast-Modified:\x20Sun,\x2003\x20May\x20
+SF:2026\x2015:45:26\x20GMT\r\nVary:\x20Accept-Encoding\r\nVary:\x20Origin\
+SF:r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:04\x20GMT\r\n\r\n<!DOCTY
+SF:PE\x20html>\n<html\x20lang=\"en\"\x20data-beasties-container>\n\x20\x20
+SF:<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<t
+SF:itle>Snaps</title>\n\x20\x20\x20\x20<base\x20href=\"/\">\n\x20\x20\x20\
+SF:x20<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20initi
+SF:al-scale=1\.0\">\n\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image
+SF:/x-icon\"\x20href=\"favicon\.ico\">\n\x20\x20<style>html{--mat-sys-on-s
+SF:urface:initial}html{--mat-app-background-color:#303030;--mat-app-text-c
+SF:olor:white;--mat-app-elevation-shadow-level-0:0px\x200px\x200px\x200px\
+SF:x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x200px\x200px\x200px\x20rgba\(
+SF:0,\x200,\x200,\x20\.14\),\x200px\x200px\x200px\x200px\x20rgba\(0,\x200,
+SF:\x200,\x20\.12\);--mat-app-elevation-shadow-level-1:0px\x202px\x201px\x
+SF:20-1px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x201px\x201px\x200px\x2
+SF:0rgba\(0,\x200,\x200,\x20\.14\),\x200px\x201px\x203px\x200px\x20rgba\(0
+SF:,\x200,\x200,\x20\.12\);--mat-app");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 172.60.1.131
+Host is up (0.071s latency).
+Not shown: 65524 filtered tcp ports (no-response), 1 closed tcp port (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE      VERSION
+22/tcp   open  ssh          OpenSSH 8.9p1 Ubuntu 3ubuntu0.15 (Ubuntu Linux; protocol 2.0)
+443/tcp  open  ssl/https    XEngine
+2000/tcp open  cisco-sccp?
+5060/tcp open  sip?
+5332/tcp open  ssl/unknown
+5554/tcp open  sgi-esphttp?
+8086/tcp open  ssl/d-s-n?
+8186/tcp open  ssl/unknown
+8286/tcp open  ssl/unknown
+8300/tcp open  ssl/tmi?
+5 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5957%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,B1,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x20nosniff\
+SF:r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:07\x20GMT\r\nContent-Len
+SF:gth:\x2018\r\n\r\nbad\x20request\x20\(nrr\)\n")%r(HTTPOptions,D8,"HTTP/
+SF:1\.0\x20404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20tru
+SF:e\r\nAccess-Control-Allow-Origin:\x20\*\r\nContent-Length:\x2018\r\nCon
+SF:tent-Type:\x20text/plain\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08
+SF::07\x20GMT\r\nServer:\x20XEngine\r\n\r\n404\x20page\x20not\x20found")%r
+SF:(FourOhFourRequest,A7,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x20nosniff
+SF:\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:07\x20GMT\r\nContent-Le
+SF:ngth:\x2010\r\n\r\nnot\x20found\n")%r(GenericLines,67,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n
+SF:Connection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20ch
+SF:arset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(He
+SF:lp,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400
+SF:\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnect
+SF:ion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset
+SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Kerbero
+SF:s,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8086-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5966%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,2288,"HTTP/1\.0\x20200\x20OK\r\nAccept
+SF:-Ranges:\x20bytes\r\nContent-Length:\x2043903\r\nContent-Type:\x20text/
+SF:html;\x20charset=utf-8\r\nLast-Modified:\x20Tue,\x2028\x20Apr\x202026\x
+SF:2006:48:16\x20GMT\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:22\x20
+SF:GMT\r\n\r\n<!doctype\x20html>\n<html\x20lang=\"en\"\x20data-beasties-co
+SF:ntainer>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n
+SF:\x20\x20\x20\x20<title>XEngine</title>\n\x20\x20\x20\x20<base\x20href=\
+SF:"/\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=de
+SF:vice-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<link\x20rel=\"ic
+SF:on\"\x20type=\"image/x-icon\"\x20href=\"favicon\.ico\">\n\x20\x20<style
+SF:>html{--mat-sys-on-surface:initial}html{--mat-app-background-color:#303
+SF:030;--mat-app-text-color:white;--mat-app-elevation-shadow-level-0:0px\x
+SF:200px\x200px\x200px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x200px\x20
+SF:0px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x200px\x200px\x200
+SF:px\x20rgba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-level-1
+SF::0px\x202px\x201px\x20-1px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x20
+SF:1px\x201px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x201px\x203
+SF:px\x200px\x20rgba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-
+SF:level-2:0px\x203px\x201")%r(HTTPOptions,EC,"HTTP/1\.0\x20200\x20OK\r\nA
+SF:ccess-Control-Allow-Headers:\x20Content-Type,\x20Authorization\r\nAcces
+SF:s-Control-Allow-Methods:\x20GET,\x20POST,\x20PUT,\x20PATCH,\x20DELETE,\
+SF:x20OPTIONS\r\nAccess-Control-Allow-Origin:\x20\*\r\nDate:\x20Wed,\x2006
+SF:\x20May\x202026\x2015:08:23\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(
+SF:RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20
+SF:text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\
+SF:x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400
+SF:\x20Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8186-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5966%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r
+SF:\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-Ori
+SF:gin:\x20\*\r\nContent-Type:\x20text/plain\r\nServer:\x20XEngine\r\nDate
+SF::\x20Wed,\x2006\x20May\x202026\x2015:08:23\x20GMT\r\nContent-Length:\x2
+SF:018\r\n\r\n404\x20page\x20not\x20found")%r(HTTPOptions,D8,"HTTP/1\.0\x2
+SF:0404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20true\r\nAc
+SF:cess-Control-Allow-Origin:\x20\*\r\nContent-Type:\x20text/plain\r\nServ
+SF:er:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:23\x20GMT
+SF:\r\nContent-Length:\x2018\r\n\r\n404\x20page\x20not\x20found")%r(RTSPRe
+SF:quest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq
+SF:,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;
+SF:\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request"
+SF:)%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(FourOhFourRequest,DC,"HTTP/1\.0\x20301\x20Moved\x20Perm
+SF:anently\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-
+SF:Allow-Origin:\x20\*\r\nLocation:\x20/nice\x20ports,/Trinity\.txt\.bak/\
+SF:r\nServer:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:51
+SF:\x20GMT\r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8286-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5967%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r
+SF:\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-Ori
+SF:gin:\x20\*\r\nContent-Type:\x20text/plain\r\nServer:\x20XEngine\r\nDate
+SF::\x20Wed,\x2006\x20May\x202026\x2015:08:23\x20GMT\r\nContent-Length:\x2
+SF:018\r\n\r\n404\x20page\x20not\x20found")%r(HTTPOptions,D8,"HTTP/1\.0\x2
+SF:0404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20true\r\nAc
+SF:cess-Control-Allow-Origin:\x20\*\r\nContent-Type:\x20text/plain\r\nServ
+SF:er:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:23\x20GMT
+SF:\r\nContent-Length:\x2018\r\n\r\n404\x20page\x20not\x20found")%r(RTSPRe
+SF:quest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq
+SF:,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;
+SF:\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request"
+SF:)%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(FourOhFourRequest,DC,"HTTP/1\.0\x20301\x20Moved\x20Perm
+SF:anently\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-
+SF:Allow-Origin:\x20\*\r\nLocation:\x20/nice\x20ports,/Trinity\.txt\.bak/\
+SF:r\nServer:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:51
+SF:\x20GMT\r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8300-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5967%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,B1,"HTTP/1\.0\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Opt
+SF:ions:\x20nosniff\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:23\x20G
+SF:MT\r\nContent-Length:\x2018\r\n\r\nbad\x20request\x20\(nrr\)\n")%r(HTTP
+SF:Options,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r\nAccess-Control-Allow-Cr
+SF:edentials:\x20true\r\nAccess-Control-Allow-Origin:\x20\*\r\nContent-Len
+SF:gth:\x2018\r\nContent-Type:\x20text/plain\r\nDate:\x20Wed,\x2006\x20May
+SF:\x202026\x2015:08:23\x20GMT\r\nServer:\x20XEngine\r\n\r\n404\x20page\x2
+SF:0not\x20found")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
+SF:r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x
+SF:20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServe
+SF:rCookie,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(TLSSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r
+SF:\n400\x20Bad\x20Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x2
+SF:0close\r\n\r\n400\x20Bad\x20Request")%r(FourOhFourRequest,A7,"HTTP/1\.0
+SF:\x20404\x20Not\x20Found\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nX-Content-Type-Options:\x20nosniff\r\nDate:\x20Wed,\x2006\x20May\x
+SF:202026\x2015:08:51\x20GMT\r\nContent-Length:\x2010\r\n\r\nnot\x20found\
+SF:n")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20
+SF:Bad\x20Request");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.60.1.132
+Host is up (0.071s latency).
+Not shown: 65524 filtered tcp ports (no-response), 1 closed tcp port (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE      VERSION
+22/tcp   open  ssh          OpenSSH 8.9p1 Ubuntu 3ubuntu0.15 (Ubuntu Linux; protocol 2.0)
+443/tcp  open  ssl/https    XEngine
+2000/tcp open  cisco-sccp?
+5060/tcp open  sip?
+5332/tcp open  ssl/unknown
+5554/tcp open  sgi-esphttp?
+8086/tcp open  ssl/d-s-n?
+8186/tcp open  ssl/unknown
+8286/tcp open  ssl/unknown
+8300/tcp open  ssl/tmi?
+5 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB5965%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,B1,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x20nosniff\
+SF:r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:21\x20GMT\r\nContent-Len
+SF:gth:\x2018\r\n\r\nbad\x20request\x20\(nrr\)\n")%r(HTTPOptions,D8,"HTTP/
+SF:1\.0\x20404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20tru
+SF:e\r\nAccess-Control-Allow-Origin:\x20\*\r\nContent-Length:\x2018\r\nCon
+SF:tent-Type:\x20text/plain\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08
+SF::21\x20GMT\r\nServer:\x20XEngine\r\n\r\n404\x20page\x20not\x20found")%r
+SF:(FourOhFourRequest,A7,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x20nosniff
+SF:\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:21\x20GMT\r\nContent-Le
+SF:ngth:\x2010\r\n\r\nnot\x20found\n")%r(GenericLines,67,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n
+SF:Connection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20ch
+SF:arset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(He
+SF:lp,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400
+SF:\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnect
+SF:ion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset
+SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Kerbero
+SF:s,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8086-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB597B%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,2288,"HTTP/1\.0\x20200\x20OK\r\nAccept
+SF:-Ranges:\x20bytes\r\nContent-Length:\x2043903\r\nContent-Type:\x20text/
+SF:html;\x20charset=utf-8\r\nLast-Modified:\x20Tue,\x2028\x20Apr\x202026\x
+SF:2006:47:09\x20GMT\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:43\x20
+SF:GMT\r\n\r\n<!doctype\x20html>\n<html\x20lang=\"en\"\x20data-beasties-co
+SF:ntainer>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n
+SF:\x20\x20\x20\x20<title>XEngine</title>\n\x20\x20\x20\x20<base\x20href=\
+SF:"/\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=de
+SF:vice-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<link\x20rel=\"ic
+SF:on\"\x20type=\"image/x-icon\"\x20href=\"favicon\.ico\">\n\x20\x20<style
+SF:>html{--mat-sys-on-surface:initial}html{--mat-app-background-color:#303
+SF:030;--mat-app-text-color:white;--mat-app-elevation-shadow-level-0:0px\x
+SF:200px\x200px\x200px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x200px\x20
+SF:0px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x200px\x200px\x200
+SF:px\x20rgba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-level-1
+SF::0px\x202px\x201px\x20-1px\x20rgba\(0,\x200,\x200,\x20\.2\),\x200px\x20
+SF:1px\x201px\x200px\x20rgba\(0,\x200,\x200,\x20\.14\),\x200px\x201px\x203
+SF:px\x200px\x20rgba\(0,\x200,\x200,\x20\.12\);--mat-app-elevation-shadow-
+SF:level-2:0px\x203px\x201")%r(HTTPOptions,EC,"HTTP/1\.0\x20200\x20OK\r\nA
+SF:ccess-Control-Allow-Headers:\x20Content-Type,\x20Authorization\r\nAcces
+SF:s-Control-Allow-Methods:\x20GET,\x20POST,\x20PUT,\x20PATCH,\x20DELETE,\
+SF:x20OPTIONS\r\nAccess-Control-Allow-Origin:\x20\*\r\nDate:\x20Wed,\x2006
+SF:\x20May\x202026\x2015:08:44\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(
+SF:RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20
+SF:text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\
+SF:x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400
+SF:\x20Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8186-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB597B%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r
+SF:\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-Ori
+SF:gin:\x20\*\r\nContent-Type:\x20text/plain\r\nServer:\x20XEngine\r\nDate
+SF::\x20Wed,\x2006\x20May\x202026\x2015:08:43\x20GMT\r\nContent-Length:\x2
+SF:018\r\n\r\n404\x20page\x20not\x20found")%r(HTTPOptions,D8,"HTTP/1\.0\x2
+SF:0404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20true\r\nAc
+SF:cess-Control-Allow-Origin:\x20\*\r\nContent-Type:\x20text/plain\r\nServ
+SF:er:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:44\x20GMT
+SF:\r\nContent-Length:\x2018\r\n\r\n404\x20page\x20not\x20found")%r(RTSPRe
+SF:quest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq
+SF:,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;
+SF:\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request"
+SF:)%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(FourOhFourRequest,DC,"HTTP/1\.0\x20301\x20Moved\x20Perm
+SF:anently\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-
+SF:Allow-Origin:\x20\*\r\nLocation:\x20/nice\x20ports,/Trinity\.txt\.bak/\
+SF:r\nServer:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:09:12
+SF:\x20GMT\r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8286-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB597B%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r
+SF:\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-Ori
+SF:gin:\x20\*\r\nContent-Type:\x20text/plain\r\nServer:\x20XEngine\r\nDate
+SF::\x20Wed,\x2006\x20May\x202026\x2015:08:43\x20GMT\r\nContent-Length:\x2
+SF:018\r\n\r\n404\x20page\x20not\x20found")%r(HTTPOptions,D8,"HTTP/1\.0\x2
+SF:0404\x20Not\x20Found\r\nAccess-Control-Allow-Credentials:\x20true\r\nAc
+SF:cess-Control-Allow-Origin:\x20\*\r\nContent-Type:\x20text/plain\r\nServ
+SF:er:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:44\x20GMT
+SF:\r\nContent-Length:\x2018\r\n\r\n404\x20page\x20not\x20found")%r(RTSPRe
+SF:quest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq
+SF:,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;
+SF:\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request"
+SF:)%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(FourOhFourRequest,DC,"HTTP/1\.0\x20301\x20Moved\x20Perm
+SF:anently\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-
+SF:Allow-Origin:\x20\*\r\nLocation:\x20/nice\x20ports,/Trinity\.txt\.bak/\
+SF:r\nServer:\x20XEngine\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:09:12
+SF:\x20GMT\r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8300-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB597A%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(GetRequest,B1,"HTTP/1\.0\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Opt
+SF:ions:\x20nosniff\r\nDate:\x20Wed,\x2006\x20May\x202026\x2015:08:42\x20G
+SF:MT\r\nContent-Length:\x2018\r\n\r\nbad\x20request\x20\(nrr\)\n")%r(HTTP
+SF:Options,D8,"HTTP/1\.0\x20404\x20Not\x20Found\r\nAccess-Control-Allow-Cr
+SF:edentials:\x20true\r\nAccess-Control-Allow-Origin:\x20\*\r\nContent-Len
+SF:gth:\x2018\r\nContent-Type:\x20text/plain\r\nDate:\x20Wed,\x2006\x20May
+SF:\x202026\x2015:08:43\x20GMT\r\nServer:\x20XEngine\r\n\r\n404\x20page\x2
+SF:0not\x20found")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
+SF:r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x
+SF:20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServe
+SF:rCookie,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(TLSSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r
+SF:\n400\x20Bad\x20Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x2
+SF:0close\r\n\r\n400\x20Bad\x20Request")%r(FourOhFourRequest,A7,"HTTP/1\.0
+SF:\x20404\x20Not\x20Found\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nX-Content-Type-Options:\x20nosniff\r\nDate:\x20Wed,\x2006\x20May\x
+SF:202026\x2015:09:12\x20GMT\r\nContent-Length:\x2010\r\n\r\nnot\x20found\
+SF:n")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20
+SF:Bad\x20Request");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for DOTSD3CPITSDMZ.chpfms.d3its.local (172.60.1.220)
+Host is up (0.071s latency).
+Not shown: 65521 filtered tcp ports (no-response), 4 closed tcp ports (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             OpenSSH 8.6 (protocol 2.0)
+80/tcp   open  http            VMware ESXi Server httpd
+427/tcp  open  svrloc?
+443/tcp  open  ssl/https       VMware ESXi SOAP API 6.7.0
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+2000/tcp open  cisco-sccp?
+5060/tcp open  sip?
+8000/tcp open  http-alt?
+8300/tcp open  tmi?
+9080/tcp open  ssl/glrpc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9080-TCP:V=7.94SVN%T=SSL%I=7%D=5/6%Time=69FB59A0%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,78,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20\r\nX-Frame-O
+SF:ptions:\x20SAMEORIGIN\r\nContent-Type:\x20text/xml\r\nContent-Length:\x
+SF:200\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,87,"HTTP/1\.1\x2020
+SF:0\x20OK\r\nServer:\x20\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Typ
+SF:e:\x20text/xml;\x20charset=utf-8\r\nContent-Length:\x200\r\nConnection:
+SF:\x20close\r\n\r\n")%r(RPCCheck,6EE,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nServer:\x20\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Type:\x20ap
+SF:plication/soap\+xml;\x20charset=utf-8\r\nContent-Length:\x201615\r\nCon
+SF:nection:\x20close\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8
+SF:\"\?>\n<SOAP-ENV:Envelope\x20xmlns:SOAP-ENV=\"http://www\.w3\.org/2003/
+SF:05/soap-envelope\"\x20xmlns:SOAP-ENC=\"http://www\.w3\.org/2003/05/soap
+SF:-encoding\"\x20xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\
+SF:"\x20xmlns:xsd=\"http://www\.w3\.org/2001/XMLSchema\"\x20xmlns:ns1=\"ht
+SF:tp://vasa\.vim\.vmware\.com/xsd\"\x20xmlns:placementPolicy=\"http://pla
+SF:cement\.policy\.data\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:fault=\"htt
+SF:p://fault\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:capability=\"http://ca
+SF:pability\.policy\.data\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:profile=\
+SF:"http://profile\.policy\.data\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:ns
+SF:3=\"http://annotation\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:policy=\"h
+SF:ttp://policy\.data\.vasa\.vim\.vmware\.com/xsd\"\x20xmlns:providerCapab
+SF:ility=\"http://provider\.capab")%r(TerminalServerCookie,6EE,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nServer:\x20\r\nX-Frame-Options:\x20SAMEORIG
+SF:IN\r\nContent-Type:\x20application/soap\+xml;\x20charset=utf-8\r\nConte
+SF:nt-Length:\x201615\r\nConnection:\x20close\r\n\r\n<\?xml\x20version=\"1
+SF:\.0\"\x20encoding=\"UTF-8\"\?>\n<SOAP-ENV:Envelope\x20xmlns:SOAP-ENV=\"
+SF:http://www\.w3\.org/2003/05/soap-envelope\"\x20xmlns:SOAP-ENC=\"http://
+SF:www\.w3\.org/2003/05/soap-encoding\"\x20xmlns:xsi=\"http://www\.w3\.org
+SF:/2001/XMLSchema-instance\"\x20xmlns:xsd=\"http://www\.w3\.org/2001/XMLS
+SF:chema\"\x20xmlns:ns1=\"http://vasa\.vim\.vmware\.com/xsd\"\x20xmlns:pla
+SF:cementPolicy=\"http://placement\.policy\.data\.vasa\.vim\.vmware\.com/x
+SF:sd\"\x20xmlns:fault=\"http://fault\.vasa\.vim\.vmware\.com/xsd\"\x20xml
+SF:ns:capability=\"http://capability\.policy\.data\.vasa\.vim\.vmware\.com
+SF:/xsd\"\x20xmlns:profile=\"http://profile\.policy\.data\.vasa\.vim\.vmwa
+SF:re\.com/xsd\"\x20xmlns:ns3=\"http://annotation\.vasa\.vim\.vmware\.com/
+SF:xsd\"\x20xmlns:policy=\"http://policy\.data\.vasa\.vim\.vmware\.com/xsd
+SF:\"\x20xmlns:providerCapability=\"http://provider\.capab");
+Service Info: CPE: cpe:/o:vmware:esxi, cpe:/o:vmware:ESXi:6.7.0
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (23 hosts up) scanned in 966.13 seconds
