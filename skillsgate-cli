@@ -1,0 +1,91 @@
+#!/bin/bash
+# skillsgate-cli — Search and install skills from skills.sh API
+# Usage:
+#   skillsgate-cli search <query> [limit]
+#   skillsgate-cli install <source/name>  (e.g. samber/cc-skills-golang/golang-testing)
+#   skillsgate-cli install-top <query> [count]
+
+SKILLS_DIR="$HOME/.claude/skills"
+API="https://skills.sh/api"
+
+search() {
+  local query="$1"
+  local limit="${2:-10}"
+  curl -s "$API/search?q=$(echo "$query" | jq -sRr @uri)&limit=$limit" | \
+    jq -r '.skills[] | "\(.installs)\t\(.id)\t\(.source)"' | \
+    sort -rn | \
+    awk -F'\t' '{printf "%8s  %-45s %s\n", $1, $2, $3}'
+}
+
+install_skill() {
+  local full_id="$1"
+  # full_id format: source/repo/skill-name OR just source/skill-name
+  local source=$(echo "$full_id" | rev | cut -d'/' -f2- | rev)
+  local name=$(echo "$full_id" | rev | cut -d'/' -f1 | rev)
+  local dest="$SKILLS_DIR/$name"
+
+  if [ -d "$dest" ] || [ -L "$dest" ]; then
+    echo "SKIP: $name already installed at $dest"
+    return 1
+  fi
+
+  echo "Installing $name from $source..."
+  mkdir -p "$dest"
+
+  # Download SKILL.md
+  local skill_md
+  skill_md=$(curl -sf "https://raw.githubusercontent.com/$source/main/skills/$name/SKILL.md")
+  if [ -z "$skill_md" ]; then
+    skill_md=$(curl -sf "https://raw.githubusercontent.com/$source/master/skills/$name/SKILL.md")
+  fi
+
+  if [ -z "$skill_md" ]; then
+    echo "  FAIL: Could not download SKILL.md"
+    rm -rf "$dest"
+    return 1
+  fi
+
+  echo "$skill_md" > "$dest/SKILL.md"
+
+  # Try to download references/ if it exists
+  local refs
+  refs=$(curl -sf "https://api.github.com/repos/$source/contents/skills/$name/references" | jq -r '.[].name' 2>/dev/null)
+  if [ -n "$refs" ] && [ "$refs" != "null" ]; then
+    mkdir -p "$dest/references"
+    echo "$refs" | while read -r ref_file; do
+      curl -sf "https://raw.githubusercontent.com/$source/main/skills/$name/references/$ref_file" > "$dest/references/$ref_file" 2>/dev/null || \
+      curl -sf "https://raw.githubusercontent.com/$source/master/skills/$name/references/$ref_file" > "$dest/references/$ref_file" 2>/dev/null
+    done
+    local ref_count=$(echo "$refs" | wc -l)
+    echo "  + $ref_count reference files"
+  fi
+
+  local lines=$(wc -l < "$dest/SKILL.md")
+  echo "  OK: $name installed ($lines lines)"
+}
+
+install_top() {
+  local query="$1"
+  local count="${2:-5}"
+  echo "Searching for top $count '$query' skills..."
+  local results
+  results=$(curl -s "$API/search?q=$(echo "$query" | jq -sRr @uri)&limit=$count")
+  
+  echo "$results" | jq -r '.skills[] | .id' | while read -r skill_id; do
+    install_skill "$skill_id"
+  done
+}
+
+case "$1" in
+  search|s)   search "$2" "$3" ;;
+  install|i)  install_skill "$2" ;;
+  install-top|it) install_top "$2" "$3" ;;
+  *)
+    echo "skillsgate-cli — Search and install skills from skills.sh"
+    echo ""
+    echo "Usage:"
+    echo "  skillsgate-cli search <query> [limit]"
+    echo "  skillsgate-cli install <source/repo/skill-name>"
+    echo "  skillsgate-cli install-top <query> [count]"
+    ;;
+esac
